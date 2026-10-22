@@ -104,4 +104,3 @@ test("should revoke an active session", () => {
     // Повторне видалення не повинно знайти сесію
     assert.equal(revokeSession(token), false);
 });
-

@@ -53,4 +53,3 @@ test("should reject an invalid stored hash", async () => {
 
     assert.equal(result, false);
 });
-
