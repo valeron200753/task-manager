@@ -1,31 +1,31 @@
 
 /* =====================================
-   TOKYO.DEV — DESIGN TOKENS
+   TASK MANAGER — DESIGN TOKENS
    ===================================== */
 
-/* DARK FOREST — основна тема */
+/* MIDNIGHT INDIGO — основна тема */
 
 :root,
 .dark {
-    color-scheme: dark;
+     color-scheme: dark;
 
-    --bg-primary: #0B0F14;
-    --bg-secondary: #10161D;
+    --bg-primary: #0B1020;
+    --bg-secondary: #10182B;
 
-    --surface-primary: #111820;
-    --surface-raised: #19232E;
+    --surface-primary: #151D32;
+    --surface-raised: #1D2941;
 
-    --border-primary: #1E293B;
+    --border-primary: #303D5A;
 
     --text-primary: #F1F5F9;
-    --text-secondary: #94A3B8;
+    --text-secondary: #ABBAD0;
 
-    --accent: #22C55E;
-    --accent-hover: #4ADE80;
-    --accent-contrast: #071009;
-    --accent-soft: rgba(34, 197, 94, 0.10);
+    --accent: #818CF8;
+    --accent-hover: #A5B4FC;
+    --accent-contrast: #0B1020;
+    --accent-soft: rgba(129, 140, 248, 0.14);
 
-    --header-bg: rgba(11, 15, 20, 0.88);
+    --header-bg: rgba(11, 16, 32, 0.90);
 
     --font-sans:
         "Inter",
@@ -53,23 +53,23 @@
 /* LIGHT — альтернативна тема */
 
 .light {
-    color-scheme: light;
-
-    --bg-primary: #F5F8F7;
-    --bg-secondary: #EDF2EF;
+     color-scheme: light;
+    --bg-primary: #F5F7FF;
+    --bg-secondary: #EDEFFC;
 
     --surface-primary: #FFFFFF;
-    --surface-raised: #F1F5F3;
+    --surface-raised: #EEF1FF;
 
-    --border-primary: #D9E3DE;
+    --border-primary: #D7DEED;
 
-    --text-primary: #122019;
-    --text-secondary: #5B6B63;
+    --text-primary: #17213A;
+    --text-secondary: #526079;
 
-    --accent: #167A3D;
-    --accent-hover: #126B35;
+    --accent: #4F46E5;
+    --accent-hover: #4338CA;
     --accent-contrast: #FFFFFF;
-    --accent-soft: rgba(22, 122, 61, 0.08);
+    --accent-soft: rgba(79, 70, 229, 0.10);
 
-    --header-bg: rgba(245, 248, 247, 0.91);
+    --header-bg: rgba(245, 247, 255, 0.92);
+
 }
