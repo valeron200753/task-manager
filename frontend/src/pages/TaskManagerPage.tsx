@@ -347,10 +347,10 @@ function TaskManagerPage({
                             </span>
 
                             <strong className="task-stat-card__value">
-                                {String(totalTasks).padStart(2, "0")}
+                                {totalTasks}
                             </strong>
 
-                            <p>Total tasks: {totalTasks}</p>
+                            <p>Total tasks</p>
                         </article>
 
                         <article className="task-stat-card">
@@ -359,10 +359,10 @@ function TaskManagerPage({
                             </span>
 
                             <strong className="task-stat-card__value">
-                                {String(completedTasks).padStart(2, "0")}
+                                {completedTasks}
                             </strong>
 
-                            <p>Completed: {completedTasks}</p>
+                            <p>Completed</p>
                         </article>
 
                         <article className="task-stat-card">
@@ -371,10 +371,10 @@ function TaskManagerPage({
                             </span>
 
                             <strong className="task-stat-card__value">
-                                {String(remainingTasks).padStart(2, "0")}
+                                {remainingTasks}
                             </strong>
 
-                            <p>Remaining: {remainingTasks}</p>
+                            <p>Remaining</p>
                         </article>
                     </div>
 

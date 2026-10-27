@@ -4,7 +4,7 @@
    ===================================== */
 
 main.task-page {
-    padding-top: clamp(48px, 7vw, 90px);
+    padding-top: clamp(24px, 4vw, 48px);
     padding-bottom: 110px;
 }
 
@@ -27,13 +27,13 @@ main.task-page {
     align-items: center;
     gap: 28px;
 
-    margin-bottom: 65px;
+    margin-bottom: 32px;
 }
 
 .task-page__header h1 {
-    margin: 0 0 18px;
+    margin: 0 0 10px;
 
-    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-size: clamp(2rem, 4vw, 3.25rem);
     letter-spacing: -0.06em;
 }
 
@@ -55,8 +55,8 @@ main.task-page {
     place-items: center;
     flex-shrink: 0;
 
-    width: 72px;
-    height: 72px;
+    width: 52px;
+    height: 52px;
 
     border: 1px solid var(--border-primary);
     border-radius: 20px;
@@ -64,7 +64,7 @@ main.task-page {
     background: var(--accent-soft);
     color: var(--accent);
 
-    font-size: 35px;
+    font-size: 26px;
     font-weight: 800;
 }
 
@@ -73,7 +73,7 @@ main.task-page {
    ===================================== */
 
 .task-section-heading {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .task-section-heading h2 {
@@ -93,19 +93,19 @@ main.task-page {
    ===================================== */
 
 .task-overview {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
 }
 
 .task-overview__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    gap: 14px;
 }
 
 .task-stat-card {
     position: relative;
     min-width: 0;
-    padding: 28px;
+    padding: 18px 20px;
 
     border: 1px solid var(--border-primary);
     border-radius: var(--radius-lg);
@@ -124,8 +124,8 @@ main.task-page {
 
 .task-stat-card__icon {
     position: absolute;
-    top: 22px;
-    right: 25px;
+    top: 16px;
+    right: 16px;
 
     display: grid;
     place-items: center;
@@ -144,7 +144,7 @@ main.task-page {
 
 .task-stat-card__value {
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 
     color: var(--accent);
     font: 750 clamp(2.8rem, 4.5vw, 4rem) var(--font-mono);
@@ -164,8 +164,8 @@ main.task-page {
    ===================================== */
 
 .task-progress {
-    margin-top: 21px;
-    padding: 25px 28px;
+    margin-top: 14px;
+    padding: 16px 20px;
 
     border: 1px solid var(--border-primary);
     border-radius: var(--radius-lg);
@@ -215,11 +215,11 @@ main.task-page {
    ===================================== */
 
 .task-create {
-    margin-bottom: 75px;
+    margin-bottom: 36px;
 }
 
 .task-create__form {
-    padding: 30px;
+    padding: 20px;
 
     border: 1px solid var(--border-primary);
     border-radius: var(--radius-lg);
@@ -362,6 +362,12 @@ main.task-page {
 
 .task-board {
     margin-bottom: 60px;
+    padding: clamp(16px, 3vw, 24px);
+
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+
+    background: var(--surface-primary);
 }
 
 .task-board__toolbar {
@@ -371,7 +377,7 @@ main.task-page {
     gap: 18px;
     flex-wrap: wrap;
 
-    margin-bottom: 22px;
+    margin-bottom: 16px;
 }
 
 .task-board__filters {
@@ -441,7 +447,7 @@ main.task-page {
 
 .task-list {
     display: grid;
-    gap: 12px;
+    gap: 8px;
 
     margin: 0;
     padding: 0;
@@ -452,10 +458,10 @@ main.task-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 18px;
+    gap: 12px;
 
     min-width: 0;
-    padding: 19px 22px;
+    padding: 12px 16px;
 
     border: 1px solid var(--border-primary);
     border-radius: var(--radius-md);
@@ -473,7 +479,7 @@ main.task-page {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
 
     min-width: 0;
     flex: 1;
@@ -482,7 +488,7 @@ main.task-page {
 .task-item__label {
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
 
     min-width: 0;
     cursor: pointer;
@@ -571,12 +577,12 @@ main.task-page {
    ===================================== */
 
 .task-empty {
-    padding: 65px 24px;
+    padding: 36px 20px;
 
     border: 1px dashed var(--border-primary);
     border-radius: var(--radius-lg);
 
-    background: var(--surface-primary);
+    background: var(--bg-primary);
 
     text-align: center;
 }
@@ -653,25 +659,42 @@ main.task-page {
 
 @media (max-width: 600px) {
     main.task-page {
-        padding-top: 45px;
+        padding-top: 24px;
         padding-bottom: 70px;
     }
 
     .task-page__header {
-        margin-bottom: 48px;
+        margin-bottom: 24px;
     }
 
     .task-overview,
     .task-create {
-        margin-bottom: 55px;
+        margin-bottom: 28px;
     }
 
+
     .task-overview__grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .task-stat-card {
+        padding: 12px 10px;
+    }
+
+    .task-stat-card__icon {
+        display: none;
     }
 
     .task-stat-card__value {
-        font-size: 3rem;
+        font-size: clamp(1.65rem, 7vw, 2rem);
+        margin-bottom: 5px;
+    }
+
+    .task-stat-card p {
+        font-size: 11px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
     }
 
     .task-create__form {
@@ -695,20 +718,24 @@ main.task-page {
         flex: auto;
         width: 100%;
     }
-
     .task-item {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 18px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 12px;
     }
 
     .task-item__main {
-        width: 100%;
+        width: auto;
+        min-width: 0;
     }
 
     .task-item__delete {
-        align-self: flex-end;
+        align-self: center;
+        min-height: 44px;
+        padding: 9px 12px;
     }
+
 }
 
 @media (prefers-reduced-motion: reduce) {

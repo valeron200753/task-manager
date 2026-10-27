@@ -141,6 +141,12 @@
 /* TABLET / MOBILE */
 
 @media (max-width: 760px) {
+    .site-header {
+        background: var(--bg-primary);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
     .site-header__inner {
         width: min(
             calc(100% - 32px),
@@ -148,8 +154,8 @@
         );
 
         grid-template-columns: 1fr auto;
-        gap: 12px;
-        padding-block: 12px;
+        gap: 8px;
+        padding-block: 8px;
     }
 
     .site-nav {
@@ -162,7 +168,7 @@
     }
 
     .site-nav__link {
-        padding: 9px 12px;
+        padding: 7px 12px;
         font-size: 13px;
     }
 
